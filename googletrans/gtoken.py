@@ -59,7 +59,7 @@ class TokenAcquirer:
             return
 
         # this will be the same as python code after stripping out a reserved word 'var'
-        code = self.RE_TKK.search(r.text)(1).replace('var ', '')
+
         # unescape special ascii characters such like a \x3d(=)
         code = code.encode().decode('unicode-escape')
 
